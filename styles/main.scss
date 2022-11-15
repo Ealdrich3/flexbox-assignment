@@ -1,2 +1,46 @@
 @import 'partials/base';
 
+
+.container{
+
+        display: flex;  
+        justify-content: space-between;
+}
+
+.hero{ 
+    display: flex;
+    align-items: center  
+}
+
+.hero-content{
+    h1{
+        font-size: 4em;
+    } 
+    display: flex
+    flex-direction column
+    flex-direction column-reverse
+}
+
+.main-container{
+    .sidebar{
+        background: white;
+        flex-basis: 100px
+       }
+       .post{
+        flex-basis: 100px
+        }
+    display: flex;
+    flex-direction: row;
+} 
+   
+.mixed-layout{
+    .first{
+        flex-basis: 'equal width'
+    }
+    .second{
+        flex-basis: 'equal width'
+       
+    }
+    display: flex;
+    flex-direction: column;
+}
