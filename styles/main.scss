@@ -1,15 +1,20 @@
 @import 'partials/base';
 
 
-.container{
-
+nav{
         display: flex;  
         justify-content: space-between;
 }
 
 .hero{ 
     display: flex;
+    justify-content: center;
     align-items: center  
+    flex-direction: column;
+}
+
+.sidebar{
+    background: white;
 }
 
 .hero-content{
@@ -22,25 +27,26 @@
 }
 
 .main-container{
-    .sidebar{
-        background: white;
-        flex-basis: 100px
+    display: flex;
+        .sidebar{
+        flex: 1
        }
        .post{
-        flex-basis: 100px
+        flex: 1
         }
+} 
+
+
+@media (min-width: 1024px) {
+
+}
+.mixed-layout{
     display: flex;
     flex-direction: row;
-} 
-   
-.mixed-layout{
-    .first{
-        flex-basis: 'equal width'
+    .first{     
+        flex: 1
     }
-    .second{
-        flex-basis: 'equal width'
-       
+    .second{       
+        flex: 1       
     }
-    display: flex;
-    flex-direction: column;
 }
